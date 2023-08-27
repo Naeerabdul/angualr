@@ -1,0 +1,19 @@
+<div class="container ssss">
+  <div class="row justify-content-between">
+    <div class="col-12">
+<app-video [videoIdA]="videoIdA"></app-video>
+
+    </div>
+
+    <div class="col-4 mt-3">
+     <div *ngFor="let Channel of data">
+        <img class="card" (click)="handleClick(Channel.id.videoId)" src="{{Channel.snippet.thumbnails.high.url}}" alt="Channel.id.videoId">
+      </div>
+    </div>
+    <div class="col-6 mt-3">
+      <input type="text" class="w-75 rounded border border-primary ">
+<button></button>
+    </div>
+  </div>
+</div>
+
